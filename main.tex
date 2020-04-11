@@ -1,4 +1,4 @@
-\documentclass[a5paper,10pt]{article}
+\documentclass[a5paper,10pt,bibliography=totoc]{article}
 \usepackage{polski}
 \usepackage[utf8x]{inputenc}
 \usepackage{amsmath}
@@ -15,7 +15,18 @@
 
 \frenchspacing
 
+\DeclareMathOperator{\Q}{\mathbb{Q}}
 \newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+
+\newtheorem{tw}{Twierdzenie}
+\newtheorem{lem}{Lemat}
+\newtheorem{wn}{Wniosek}
+\newtheorem{fakt}{Fakt}
+\newtheorem{uw}{Uwaga}
+\newtheorem{defin}{Definicja}
+\newtheorem{prz}{Przykład}
+\newenvironment{dow}{\par \noindent \emph{Dowód.\ }}{\hfill $\Box$ \par}
 
 
 \author{Paweł Lipkowski}
@@ -56,6 +67,14 @@ siema
 
 \section{Całki}
 siema
+
+\newpage
+
+\begin{thebibliography}{99}
+    \bibitem{granice1} Tadeusz Krasiński: Analiza matematyczna. Funkcje jednej zmiennej. Wydawnictwo Uniwersytetu Łódzkiego, 2003, s. 54–56. ISBN 83-7171-636-2
+    \bibitem{granice2} G.M. Fichtenholz: Rachunek różniczkowy i całkowy. Wyd. dwunaste. T. 1. Warszawa: Wydawnictwo Naukowe PWN, 2002, s. 45. ISBN 83-01-02175-6
+\end{thebibliography}
+
 \newpage
 \AddToShipoutPicture*{\BackgroundPic}
 koniec
